@@ -1,0 +1,22 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+p {
+  margin: 0;
+}
+.example-is-mobile .example-toolbar {
+  position: fixed;
+  z-index: 2;
+}
+h1.example-app-name {
+  margin-left: 8px;
+}
+.menu-icon {
+  display: none;
+
+  @media (max-width: 720px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
