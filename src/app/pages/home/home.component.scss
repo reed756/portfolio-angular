@@ -17,8 +17,10 @@ section {
   .icon-row {
     display: flex;
     gap: 1.5rem;
-    fa-icon {
-      font-size: 1.5rem;
+    a {
+      mat-icon {
+        font-size: 1.5rem;
+      }
     }
   }
   .tech-stack-row {
@@ -27,16 +29,22 @@ section {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    div {
+    overflow: hidden;
+    .tech-stack-image {
+      border-radius: 1rem;
       width: 18rem;
-    }
-    .tech-stack-image-1 {
-      background: no-repeat center/80%
-        url("../../../assets/tech-stack/angular.png");
-    }
-    .tech-stack-image-2 {
-      background: no-repeat center/80%
-        url("../../../assets/tech-stack/typescript.png");
+      overflow: hidden;
+      width: 18rem;
+      position: relative;
+      flex: none;
+      img {
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        position: absolute;
+      }
     }
   }
 }
