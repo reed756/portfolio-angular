@@ -1,0 +1,34 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  .text-col {
+    h1 {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+  }
+}
+
+.about-image {
+  max-width: none;
+  padding: 0 0.75rem;
+  img {
+    object-fit: cover;
+    border-radius: 1rem;
+    rotate: 3deg;
+  }
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+  padding: 1.5rem 1.5rem 0 0;
+  li {
+    text-decoration: none;
+    a {
+      text-decoration: none;
+      display: flex;
+    }
+  }
+}
