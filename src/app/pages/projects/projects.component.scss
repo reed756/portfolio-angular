@@ -1,0 +1,12 @@
+.header-div {
+  padding: 2rem;
+  max-width: 42rem;
+}
+
+.project-list {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  row-gap: 4rem;
+  column-gap: 3rem;
+}
