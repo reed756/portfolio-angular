@@ -4,7 +4,7 @@
 }
 
 .project-list {
-  margin-top: 5rem;
+  padding: 2rem;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   row-gap: 4rem;

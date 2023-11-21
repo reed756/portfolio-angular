@@ -1,9 +1,9 @@
 <mat-card class="example-card">
   <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
+    <div mat-card-avatar class="project-card-header-image"
+      [ngStyle]="{'background-image': 'url(' + project.image + ')'}"></div>
     <mat-card-title>{{project.title}}</mat-card-title>
   </mat-card-header>
-  <img mat-card-image [src]="project.image" alt="Photo of a Shiba Inu">
   <mat-card-content>
     <p>
       {{project.description}}
