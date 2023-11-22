@@ -23,6 +23,12 @@ ul {
     a {
       text-decoration: none;
       display: flex;
+      span {
+        color: var(--mat-sidenav-content-text-color);
+      }
+    }
+    a:hover {
+      color: var(--mat-primary-color);
     }
   }
 }
