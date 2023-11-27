@@ -1,50 +1,50 @@
-section {
-  padding: 2rem;
-  div {
-    img {
-      height: 64px;
-      width: 64px;
-    }
-    h1 {
-      font-size: 3rem;
-      line-height: 3.5rem;
-    }
-    p {
-      font-size: 1rem;
-      line-height: 1.75rem;
+div {
+  img {
+    height: 64px;
+    width: 64px;
+  }
+  h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+}
+.icon-row {
+  display: flex;
+  gap: 1.5rem;
+  a {
+    mat-icon {
+      font-size: 1.5rem;
     }
   }
-  .icon-row {
-    display: flex;
-    gap: 1.5rem;
-    a {
-      mat-icon {
-        font-size: 1.5rem;
-      }
-    }
-  }
-  .tech-stack-row {
-    width: 100%;
-    height: 352px;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+}
+.tech-stack-row {
+  width: 100%;
+  height: 352px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  overflow: hidden;
+  .tech-stack-image {
+    border-radius: 0.75rem;
+    width: 11rem;
     overflow: hidden;
-    .tech-stack-image {
+    position: relative;
+    flex: none;
+    @media (min-width: 640px) {
       border-radius: 1rem;
       width: 18rem;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      max-width: 100%;
+      object-fit: cover;
       overflow: hidden;
-      width: 18rem;
-      position: relative;
-      flex: none;
-      img {
-        height: 100%;
-        width: 100%;
-        max-width: 100%;
-        object-fit: cover;
-        overflow: hidden;
-        position: absolute;
-      }
+      position: absolute;
     }
   }
 }

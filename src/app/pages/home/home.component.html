@@ -13,11 +13,8 @@
     </a>
   </div>
   <div class="tech-stack-row">
-    <div class="tech-stack-image">
-      <img src="../../../assets/tech-stack/angular.png" alt="angular_logo">
-    </div>
-    <div class="tech-stack-image">
-      <img src="../../../assets/tech-stack/typescript.png" alt="typescript_logo">
+    <div class="tech-stack-image" *ngFor="let tech of techStack">
+      <img [src]="tech.src" [alt]="tech.alt">
     </div>
   </div>
 </section>
