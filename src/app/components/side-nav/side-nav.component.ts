@@ -8,6 +8,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { NgIf, NgFor } from '@angular/common';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { NavComponent } from '../nav/nav.component';
+import { Direction } from '@angular/cdk/bidi';
 
 @Component({
   selector: 'app-side-nav',
@@ -38,6 +39,9 @@ export class SideNavComponent implements OnDestroy {
 
   @ViewChild(MatSidenav) snav!: MatSidenav;
 
+  isDarkTheme: boolean = false;
+  direction: Direction | "auto" = "ltr";
+
   private _mobileQueryListener: () => void;
 
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
@@ -54,5 +58,13 @@ export class SideNavComponent implements OnDestroy {
     if (this.mobileQuery.matches) {
       this.snav.close();
     }
+  }
+
+  toggleTheme() {
+    this.isDarkTheme = !this.isDarkTheme;
+  }
+
+  toggleDirection() {
+    this.direction = this.direction === "ltr" ? "rtl" : "ltr";
   }
 }

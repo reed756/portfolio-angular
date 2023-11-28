@@ -1,3 +1,4 @@
+import { Direction } from '@angular/cdk/bidi';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { MaterialModule } from 'src/app/shared/material/material.module';
@@ -11,5 +12,9 @@ import { MaterialModule } from 'src/app/shared/material/material.module';
 })
 export class NavComponent {
   @Output() toggleSidenav = new EventEmitter();
+  @Output() toggleTheme = new EventEmitter();
   @Input() isMobile!: boolean;
+  @Input() isDarkMode!: boolean;
+  @Input() direction!: Direction | 'auto';
+  @Output() toggleDir = new EventEmitter();
 }

@@ -15,10 +15,8 @@ div {
 .icon-row {
   display: flex;
   gap: 1.5rem;
-  a {
-    mat-icon {
-      font-size: 1.5rem;
-    }
+  mat-icon {
+    margin: 0;
   }
 }
 .tech-stack-row {

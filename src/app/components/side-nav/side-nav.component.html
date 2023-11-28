@@ -1,5 +1,7 @@
-<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
-  <app-nav (toggleSidenav)="snav.toggle()" [isMobile]="mobileQuery.matches"></app-nav>
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches" [class.dark-theme]="isDarkTheme"
+  [dir]="direction">
+  <app-nav (toggleSidenav)="snav.toggle()" [isMobile]="mobileQuery.matches" (toggleTheme)="toggleTheme()"
+    [isDarkMode]="isDarkTheme" (toggleDir)="toggleDirection()" [direction]="direction"></app-nav>
 
   <mat-sidenav-container class="example-sidenav-container">
     <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
