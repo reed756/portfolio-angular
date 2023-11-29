@@ -8,12 +8,17 @@ p {
   position: fixed;
   z-index: 2;
 }
+.example-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
 h1 {
   cursor: pointer;
 }
 h1.example-app-name {
   margin-left: 8px;
 }
+
 .menu-icon {
   display: none;
 

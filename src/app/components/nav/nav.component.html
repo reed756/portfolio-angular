@@ -1,8 +1,10 @@
 <mat-toolbar color="primary" class="example-toolbar">
   <button mat-icon-button (click)="toggleSidenav.emit()" class="menu-icon"><mat-icon>menu</mat-icon></button>
-  <h1 class="example-app-name" routerLink="/home">James Reed - Front End Developer</h1>
-  <button mat-icon-button (click)="toggleTheme.emit()"><mat-icon>{{isDarkMode ? 'dark_mode' :
-      'light_mode'}}</mat-icon></button>
-  <button mat-icon-button (click)="toggleDir.emit()"><mat-icon>{{direction === 'ltr' ? 'format_textdirection_l_to_r' :
-      'format_textdirection_r_to_l'}}</mat-icon></button>
+  <h1 class="example-app-name" routerLink="/home">{{isMobile ? 'James Reed' : 'James Reed - Front End Developer'}}</h1>
+  <div>
+    <button mat-icon-button (click)="toggleTheme.emit()"><mat-icon>{{isDarkMode ? 'dark_mode' :
+        'light_mode'}}</mat-icon></button>
+    <button mat-icon-button (click)="toggleDir.emit()"><mat-icon>{{direction === 'ltr' ? 'format_textdirection_l_to_r' :
+        'format_textdirection_r_to_l'}}</mat-icon></button>
+  </div>
 </mat-toolbar>
