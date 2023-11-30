@@ -6,7 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NgIf, NgFor } from '@angular/common';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { NavComponent } from '../nav/nav.component';
 import { Direction } from '@angular/cdk/bidi';
 
@@ -25,7 +25,8 @@ import { Direction } from '@angular/cdk/bidi';
     NgFor,
     RouterOutlet,
     RouterLink,
-    NavComponent
+    NavComponent,
+    RouterLinkActive
   ],
 })
 export class SideNavComponent implements OnDestroy {

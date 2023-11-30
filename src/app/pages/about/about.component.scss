@@ -39,6 +39,9 @@ ul {
   text-decoration: none;
   list-style: none;
   padding: 1.5rem 1.5rem 0 0;
+  li:first-child {
+    margin-bottom: 0.5rem;
+  }
   li {
     text-decoration: none;
     a {
