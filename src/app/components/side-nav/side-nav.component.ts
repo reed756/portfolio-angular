@@ -40,7 +40,7 @@ export class SideNavComponent implements OnDestroy {
 
   @ViewChild(MatSidenav) snav!: MatSidenav;
 
-  isDarkTheme: boolean = false;
+  isDarkTheme: boolean = true;
   direction: Direction | "auto" = "ltr";
 
   private _mobileQueryListener: () => void;
@@ -49,6 +49,11 @@ export class SideNavComponent implements OnDestroy {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
+    const darkModeMatcher = media.matchMedia('(prefers-color-scheme: dark)');
+    this.isDarkTheme = darkModeMatcher.matches ? true : false;
+  }
+
+  ngOnInit() {
   }
 
   ngOnDestroy(): void {
