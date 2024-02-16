@@ -1,0 +1,22 @@
+<section>
+  <mat-accordion>
+    @for (job of jobs; track job) {
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{job.title}}
+        </mat-panel-title>
+        <mat-panel-description>
+          {{job.company}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>{{job.startEndDate}}</p>
+      <ul>
+        @for (point of job.description; track point) {
+        <li>{{point}}</li>
+        }
+      </ul>
+    </mat-expansion-panel>
+    }
+  </mat-accordion>
+</section>

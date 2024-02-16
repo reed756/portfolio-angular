@@ -35,7 +35,8 @@ export class SideNavComponent implements OnDestroy {
   fillerNav = [
     { name: 'Home', route: '/home' },
     { name: 'About', route: '/about' },
-    { name: 'Projects', route: '/projects' }
+    { name: 'Experience', route: '/experience' },
+    { name: 'Projects', route: '/projects' },
   ]
 
   @ViewChild(MatSidenav) snav!: MatSidenav;
