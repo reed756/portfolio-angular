@@ -37,6 +37,7 @@ export class SideNavComponent implements OnDestroy {
     { name: 'About', route: '/about' },
     { name: 'Experience', route: '/experience' },
     { name: 'Projects', route: '/projects' },
+    { name: 'Contact', route: '/contact' }
   ]
 
   @ViewChild(MatSidenav) snav!: MatSidenav;
